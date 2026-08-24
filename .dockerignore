@@ -1,0 +1,28 @@
+.git
+.gitignore
+.github/
+.env
+.env.*
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Aucune donnée d'exécution ou document client ne doit entrer dans le contexte de build.
+_data_main/
+_data_logs/
+_tmp/
+archives_codes/
+*.pdf
+*.doc
+*.docx
+*.xlsx
+*.xls
+*.log
+*.jsonl
+
+# La documentation et les captures ne sont pas nécessaires à l'image d'exécution.
+docs/
+README*.md
+SECURITY.md

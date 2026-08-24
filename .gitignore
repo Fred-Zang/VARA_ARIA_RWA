@@ -1,0 +1,66 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+service-account*.json
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+
+# Les JSON sont privés par défaut ; seules les démos explicitement autorisées ci-dessous sont suivies.
+*.json
+
+# Runtime/client data - preserve directory architecture, ignore contents
+_data_main/**
+!_data_main/**/
+!_data_main/**/.gitkeep
+!_data_main/README.md
+!_data_main/llm_prompt_folder/README.md
+!_data_main/llm_prompt_folder/framework_rwa_EXAMPLE.json
+!_data_main/llm_prompt_folder/framework_rwa_FULL-sous-points.json
+
+_data_logs/**
+!_data_logs/**/
+!_data_logs/**/.gitkeep
+!_data_logs/README.md
+
+_tmp/
+
+# Generated outputs
+*.log
+*.jsonl
+*.xlsx
+*.pdf
+*.doc
+*.docx
+
+# Keep public image assets when intentionally added under docs/images
+!docs/
+!docs/images/
+!docs/images/.gitkeep
+!docs/images/*.png
+!docs/images/*.jpg
+!docs/images/*.jpeg
+!docs/images/*.webp
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

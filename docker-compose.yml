@@ -1,0 +1,55 @@
+services:
+  rwa-worker:
+    profiles: ["manual"]
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        APP_UID: ${RWA_UID:-1000}
+        APP_GID: ${RWA_GID:-1000}
+    image: rwa-compliance-public-v1:local
+    env_file:
+      - .env
+    volumes:
+      - ./_data_main:/app/_data_main
+      - ./_data_logs:/app/_data_logs
+    working_dir: /app
+    command: ["python", "src/pipeline.py"]
+    init: true
+    restart: "no"
+    pids_limit: 256
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    networks:
+      - rwa-network
+
+  cron-worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        APP_UID: ${RWA_UID:-1000}
+        APP_GID: ${RWA_GID:-1000}
+    image: rwa-compliance-public-v1:local
+    env_file:
+      - .env
+    volumes:
+      - ./_data_main:/app/_data_main
+      - ./_data_logs:/app/_data_logs
+    working_dir: /app
+    entrypoint: ["python", "src/cron_runner.py"]
+    init: true
+    restart: "no"
+    pids_limit: 256
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    networks:
+      - rwa-network
+
+networks:
+  rwa-network:
+    driver: bridge

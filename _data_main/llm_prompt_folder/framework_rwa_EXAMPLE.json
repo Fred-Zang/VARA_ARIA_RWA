@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "category": "Issuer information — synthetic example",
+    "llm_prompt": "(1) Check whether the document explicitly identifies the issuer. (2) Check whether a registered jurisdiction is stated.",
+    "metric_id": "DEMO.A.1",
+    "title": "Synthetic issuer-identification criterion"
+  },
+  {
+    "id": 2,
+    "category": "Asset information — synthetic example",
+    "llm_prompt": "(1) Check whether the document describes the represented asset. (2) Check whether material limitations are disclosed.",
+    "metric_id": "DEMO.B.1",
+    "title": "Synthetic asset-description criterion"
+  }
+]
