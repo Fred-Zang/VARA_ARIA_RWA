@@ -4,6 +4,9 @@
 > **V1 publique, anonymisée — démonstration technique / portfolio.**  
 > Ce dépôt **n’est pas** le système de production déployé pour le client. Il exclut volontairement les documents confidentiels, prompts de production, framework réglementaire complet, credentials, détails d’infrastructure, données clients et résultats d’audit.
 
+🌐 **Présentation visuelle du projet :**  
+https://zang-iaconsulting.com/projects/rwa-compliance.html
+
 ## ✨ En un coup d’œil
 
 | Repère | Description |
