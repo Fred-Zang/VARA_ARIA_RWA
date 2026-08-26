@@ -18,7 +18,7 @@
 
 ## 🎯 Vue d’ensemble
 
-Le projet s’inscrivait dans un contexte d’analyse réglementaire de White Papers RWA (Real-Worl Assets) associé au cadre VARA (Virtual Assets Regulatory Authority) à Dubaï.
+Le projet s’inscrivait dans un contexte d’analyse réglementaire de White Papers RWA (Real-World Assets) associé au cadre VARA (Virtual Assets Regulatory Authority) à Dubaï.
 
 Le besoin opérationnel consistait à analyser chaque White Paper soumis au regard d’un framework réglementaire de **77 critères de conformité**, décomposés en **140 exigences élémentaires**. Un même critère peut également produire plusieurs éléments de preuve lorsqu’une information pertinente apparaît à plusieurs endroits ou sur plusieurs pages du document source.
 
